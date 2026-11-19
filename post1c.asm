@@ -1,13 +1,7 @@
 ; =============================================================
 ; post1c.asm - REPNE SCASB: buscar un caracter en una cadena
-; Arquitectura de Computadores - Unidad 8 - Parte 1 (Paso 3)
 ; Compilar: nasm -f bin post1c.asm -o post1c.com
 ; Ejecutar: post1c.com   (DOSBox)
-;
-; REPNE SCASB compara AL con [ES:DI], avanza DI y decrementa CX
-; mientras NO haya coincidencia (ZF=0) y CX > 0.
-;   - Al terminar con ZF=1: hallado, DI apunta UN byte despues.
-;   - Al terminar con ZF=0: no existe en los CX bytes revisados.
 ; =============================================================
 ORG 100h
 
