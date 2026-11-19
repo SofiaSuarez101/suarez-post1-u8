@@ -1,12 +1,7 @@
 ; =============================================================
 ; post1.asm - REP MOVSB y REP MOVSW: copia de cadenas
-; Arquitectura de Computadores - Unidad 8 - Parte 1 (Pasos 1 y 2)
 ; Compilar: nasm -f bin post1.asm -o post1.com
 ; Ejecutar: post1.com   (DOSBox)
-;
-; Registros implicitos de las instrucciones de cadena:
-;   DS:SI = origen     ES:DI = destino     CX = repeticiones
-;   DF = 0 (CLD) -> SI y DI se INCREMENTAN en cada iteracion
 ; =============================================================
 ORG 100h
 
